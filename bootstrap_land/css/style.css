@@ -1,0 +1,348 @@
+@import "reset.css";
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828282;
+    background: #fff;
+    min-width: 320px;
+}
+a{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #2cc7c1;
+}
+a:hover{color: #2cc7c1;}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    position: relative;
+}
+h2{
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*===============================HEADER============================*/
+#header{
+    background: url("../images/header_v/2.jpg") no-repeat center center;
+    background-size: cover;
+    /*height: 100vh;*/
+    height: 100%;
+    min-height: 500px;
+}
+    .section-table{
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+    .section-row{display: table-row;}
+    .section-cell{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+        .section-center{max-width: 550px; display: inline-block;}
+    #header h2{
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 31px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+    #header p{
+        font-family: Ubuntu, sans-serif;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-family: Montserrat, sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        color: #fff;
+        transition: background .5s ;
+    }
+    .btn-primary{
+        background: #7ea4e8;
+    }
+    .btn-default{
+        background: #6a7079;
+        color: #fff;
+    }
+    .btn-default:hover{background: #3c3636; color: #fff;}
+
+/*========================SPEAKERS===========================*/
+#speakers{
+    padding: 90px 0;
+    border-bottom: 2px solid #f0f0f1;
+}
+    #speakers h2{color: #828689;}
+    .large{
+        font-size: 22px;
+        color: #828689;
+        margin: 20px 0;
+    }
+    #speakers .nav li a{ color: #9097a1; }
+    .section-tabs{
+        border: 3px solid #ececec;
+        border-radius: 2px;
+    }
+    .section-tabs .nav-tabs li:not(.active){
+        background: #ececec;
+    }
+    .section-tabs .tab-content{
+        padding: 25px 15px;
+        color: #999999;
+    }
+    .section-tabs .tab-content ul, .events-tabs .tab-content ul{
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+    .section-tabs .tab-content ul li i, .events-tabs .tab-content ul li i{
+        color: #2cc7c1;
+        margin-right: 10px;
+		line-height: 30px;
+    }
+    .section-tabs .nav-tabs > li.active > a,
+    .section-tabs .nav-tabs > li.active > a:hover,
+    .section-tabs .nav-tabs > li.active > a:focus {
+        border: none;
+        font-family: Ubuntu, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        outline: 0;
+    }
+.speakers-head{
+    margin-top: 60px;
+}
+.speakers{margin-top: 20px;}
+    .item > div{position: relative;}
+    .speakers .back{
+        width: 140px;
+        height: 140px;
+        background: #6dd8d3;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .back i{
+        line-height: 140px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .speakers .front {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        cursor: pointer;
+    }
+    .speakers .front:hover{
+        opacity: 0.2;
+    }
+    .speakers .front:hover+span+h3{
+        color: #6dd8d3;
+    }
+    .speakers-head h2{
+        font-family: Montserrat, sans-serif;
+        color: #6a7079;
+    }
+    .speakers h3{
+        font-family: Ubuntu, sans-serif;
+        color: #6a7079;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+    .speakers-footer{
+        margin-top: 20px;
+    }
+/*============EVENTS================*/
+#events{
+    padding: 90px 0;
+}
+    .link-events{
+        margin-top: 15px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .events-tabs{border: 2px solid #ececec}
+    .events-tabs ul.nav {
+        background: #ececec;
+    }
+
+    .events-tabs ul.nav li.active a, .events-tabs ul.nav li a{
+        color: #a1a7af;
+    }
+    .events-tabs .tab-content{
+        padding: 25px 15px;
+    }
+    .tab-collapse{padding: 15px 0;}
+    .tab-collapse a{color: #747a84;}
+    .time{
+        background: #6dd8d3;
+        font-family: Ubuntu, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 5px;
+        border-radius: 2px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    .collapse-state{color: #6dd8d3;}
+    .collapse p{color: #999;}
+.row-item{margin-top: 70px;}
+#events .carousel-indicators{
+    left: 10%;
+    width: auto;
+    margin-left: 0;
+}
+#events .carousel-indicators li{ border-color: #6dd8d3;}
+#events .carousel-indicators li.active{background: #6dd8d3;}
+
+/*==================FORM==================*/
+#form{
+    padding: 90px 0;
+    background: #f3f3f3;
+}
+#section-form{
+    padding: 40px;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+    #section-form .btn{width: 100%; margin: 0;}
+    #section-form input, #section-form select{
+        height: 44px;
+        background: #efefef;
+        padding-right: 25px;
+    }
+/*========validator===========*/
+.has-success .form-control-feedback{
+    color: #2cc7c1;
+}
+#my-form .has-success .form-control, #my-form .has-success .form-control:focus{
+    border-color: #2cc7c1;
+    background: #fff;
+    box-shadow: none;
+}
+#my-form .form-control-feedback{
+    line-height: 44px;
+    right: 14px;
+}
+
+/*select*/
+.select2-container--default .select2-selection--single{
+    height: 44px;
+    text-align: left;
+    background: #efefef;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 44px;
+    color: #bebebe;
+}
+.select2-container--open .select2-selection--single .select2-selection__rendered{
+    color: #fff;
+}
+.select2-container--open .select2-selection--single{
+    background: #2cc7c1;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{top: 9px;}
+li.select2-results__option:first-child{
+    display: none;
+}
+.select2-results__option{
+    background: #525b64;
+    color: #2cc7c1;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background: #525b64;
+    color: #fff;
+}
+.select2-container--default .select2-results__option[aria-selected=true]{background: #525b64;}
+/*===============================SPONSORS=====================*/
+#sponsors{
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+/*=======================FOOTER===========*/
+#footer{background: #525b64; padding: 70px 0;}
+#footer a{font-size: 16px; font-weight: normal;}
+#footer h3{
+    font-size: 25px;
+    color: #fff;
+}
+#footer h4{
+    font-size: 20px;
+    color: #fff;
+}
+#footer span{font-weight: bold;}
+#footer p{margin: 15px 0; color: #cdd0d2;}
+#footer .contacts p{
+    font-size: 18px;
+    color: #2cc7c1;
+}
+#footer .contacts i{margin-right: 7px;}
+
+#copy{
+    padding: 15px 0;
+    color: #cacaca;
+    background: #3f464c;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.speakers-head, .speakers-footer, .row-item-col{margin: 20px 0;}
+    #speakers, #events, #form, #footer{padding: 20px 0;}
+    #sponsors{padding: 25px 0 0;}
+    #sponsors img{margin-bottom: 20px;}
+    .row-item{margin-top: 20px;}
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .section-center{max-width: 320px;}
+    #header h1{font-size: 20px;}
+    #header p{font-size: 15px;}
+    .section-btn{font-size: 15px;}
+
+}
+
+@media only screen and (max-width : 600px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .tab-collapse a{font-size: 12px;}
+    .time{
+        font-size: 11px;
+        padding: 2px;
+        margin-right: 0px;
+    }
+    .events-tabs .fa-plus-circle {font-size: 12px;}
+}
